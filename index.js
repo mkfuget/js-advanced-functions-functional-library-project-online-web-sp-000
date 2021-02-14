@@ -44,7 +44,7 @@ const fi = (function() {
     },
 
     reduce: function(collection, callback, acc = 0) {
-      let out = acc;
+      let out = 0;
       if (typeof collection == "object")
       {
         for(const [key, value] of Object.entries(collection))
