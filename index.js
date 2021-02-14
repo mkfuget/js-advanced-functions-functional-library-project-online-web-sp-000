@@ -45,19 +45,9 @@ const fi = (function() {
 
     reduce: function(collection, callback, acc = 0) {
       let out = 0;
-      if (typeof collection == "object")
+      for(let i = 0; i<collection.length; i++)
       {
-        for(const [key, value] of Object.entries(collection))
-        {
-          out +=  callback(value, key, collection)
-        }
-      }
-      else
-      {
-        for(let i = 0; i<collection.length; i++)
-        {
-          out += (callback(acc, collection[i], collection))
-        }
+        out += (callback(acc, collection[i], collection))
       }
       return out
 
