@@ -126,13 +126,13 @@ const fi = (function() {
       }
       return out.sort(function(a, b){return callback(a) - callback(b)})
     },
-    flatten: function(array, [shallow])
+    flatten: function(array, shallow)
     {
         let out = []
         console.log(array)
         for(let i=0; i<array.length; i++)
         {
-            if(if typeof array[i] === "array")
+            if( typeof array[i] === "array")
             {
               console.log(array[i])
               out.push(fi.flatten(array[i]))
