@@ -130,27 +130,30 @@ const fi = (function() {
     {
       console.log("IN")
       console.log("array")
-        let count = 0;
         let out = []
         console.log(array)
-        for(let i=0; i<array.length; i++)
+        do 
         {
-            if(Array.isArray(array[i]))
-            {
-              console.log(array[i])
-              console.log("IN SUBARRAY")
-
-              for(let j=0; j<array[i].length; j++)
+          
+          for(let i=0; i<array.length; i++)
+          {
+              if(Array.isArray(array[i]))
               {
-                out.push(array[i][j])
+                console.log(array[i])
+                console.log("IN SUBARRAY")
+
+                for(let j=0; j<array[i].length; j++)
+                {
+                  out.push(array[i][j])
+                }
               }
-            }
-            else
-            {
-              console.log(array[i])
-              out.push(array[i])
-            }
-        }
+              else
+              {
+                console.log(array[i])
+                out.push(array[i])
+              }
+          }
+        } (!shallow && collapsed)
         console.log("OUT")
         console.log(out)
         array = out;
