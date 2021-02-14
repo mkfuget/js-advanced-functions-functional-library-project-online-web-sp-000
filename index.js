@@ -105,6 +105,18 @@ const fi = (function() {
       }
       return (out.length === 1 ? out[0]: out);
     },
+    last: function(collection)
+    {
+      let out = [];
+      for(let i=0; i<n; i++)
+      {
+        if(collection[i])
+        {
+          out.push(collection[collection.length - n + i])
+        }
+      }
+      return (out.length === 1 ? out[0]: out);
+    },
 
     functions: function() {
 
