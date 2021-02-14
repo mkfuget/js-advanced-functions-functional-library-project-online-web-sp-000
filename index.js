@@ -9,7 +9,7 @@ const fi = (function() {
       {
         console.log("TEST")
       }
-      else 
+      else
       {
         for(let i = 0; i<collection.length; i++)
         {
