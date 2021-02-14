@@ -135,9 +135,9 @@ const fi = (function() {
             {
               out.concat(fi.flatten(array[i]))
             }
-            else 
+            else
             {
-                out.push(array[i])  
+                out.push(array[i])
             }
         }
         array = out;
