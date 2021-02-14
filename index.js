@@ -5,7 +5,10 @@ const fi = (function() {
     },
 
     each: function(collection, callback) {
-
+      for(let i= 0; i<collection.legnth; i++)
+      {
+        callback(collection[i])
+      }
     },
 
     map: function() {
