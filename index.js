@@ -47,7 +47,7 @@ const fi = (function() {
       let out = acc;
       for(let i = 0; i<collection.length; i++)
       {
-        out += (callback(acc, collection[i], collection))
+        out += (callback(collection[i], acc, collection))
       }
       return out
 
