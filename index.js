@@ -76,7 +76,10 @@ const fi = (function() {
       return out
 
     },
-
+    size: function(collection)
+    {
+      return collection.length
+    }
     functions: function() {
 
     },
