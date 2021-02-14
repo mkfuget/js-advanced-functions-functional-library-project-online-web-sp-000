@@ -60,7 +60,7 @@ const fi = (function() {
           return collection[i]
         }
       }
-      return acc
+      return undefined
 
     },
     functions: function() {
