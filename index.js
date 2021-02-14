@@ -8,11 +8,11 @@ const fi = (function() {
 
       if (typeof collection == "object")
       {
-        for(let i = 0; i<collection.length; i++)
+        let i =0;
+        for(const [key, value] of collection)
         {
-          callback(collection[i], i, collection)
+          callback(value, key, collection)
         }
-
       }
       else
       {
