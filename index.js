@@ -105,7 +105,7 @@ const fi = (function() {
       }
       return (out.length === 1 ? out[0]: out);
     },
-    last: function(collection)
+    compact: function(collection)
     {
       let out = [];
       for(let i=0; i<n; i++)
