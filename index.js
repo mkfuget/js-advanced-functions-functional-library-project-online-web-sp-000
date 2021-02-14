@@ -138,6 +138,8 @@ const fi = (function() {
             if( typeof array[i] === "array")
             {
               console.log(array[i])
+              console.log("IN ARRAY")
+
               for(let j=0; j<array[i].length; j++)
               {
                 out.push(array[i][j])
