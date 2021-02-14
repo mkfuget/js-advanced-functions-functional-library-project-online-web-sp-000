@@ -131,10 +131,13 @@ const fi = (function() {
       console.log("IN")
       console.log("array")
         console.log(array)
+        let out = []
+        let collapsed = false;
+
         do
         {
-          let out = []
-          let collapsed = false;
+          out = []
+          collapsed = false;
           for(let i=0; i<array.length; i++)
           {
               if(Array.isArray(array[i]))
