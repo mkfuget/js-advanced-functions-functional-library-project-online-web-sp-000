@@ -5,9 +5,11 @@ const fi = (function() {
     },
 
     each: function(collection, callback) {
-      for(let i= 0; i<collection.length; i++)
+      let i = 0;
+      for(const element of collection)
       {
-        callback(collection[i], i, collection)
+        callback(element, i, collection)
+        i++;
       }
       return collection
     },
