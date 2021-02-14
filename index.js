@@ -88,8 +88,8 @@ const fi = (function() {
       }
     },
     first: function(collection, n=1)
-    let out = [];
     {
+      let out = [];
       for(let i=0; i<n; i++)
       {
         out.push(collection[1])
