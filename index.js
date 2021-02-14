@@ -101,7 +101,7 @@ const fi = (function() {
       let out = [];
       for(let i=0; i<n; i++)
       {
-        out.push(collection[collection.length - 1 - i])
+        out.push(collection[collection.length - n - 1 + i])
       }
       return (out.length === 1 ? out[0]: out);
     },
