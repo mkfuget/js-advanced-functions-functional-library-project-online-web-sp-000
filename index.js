@@ -8,7 +8,6 @@ const fi = (function() {
 
       if (typeof collection == "object")
       {
-        let i =0;
         for(const [key, value] of collection)
         {
           callback(value, key, collection)
