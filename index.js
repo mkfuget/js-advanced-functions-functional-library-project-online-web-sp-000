@@ -115,7 +115,7 @@ const fi = (function() {
           out.push(collection[collection.length - n + i])
         }
       }
-      return (out.length === 1 ? out[0]: out);
+      return out;
     },
 
     functions: function() {
