@@ -39,7 +39,7 @@ const fi = (function() {
           out.push(callback(collection[i], i, collection))
         }
       }
-      return collection
+      return out
 
     },
 
