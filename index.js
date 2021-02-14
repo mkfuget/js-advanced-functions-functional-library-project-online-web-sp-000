@@ -169,6 +169,7 @@ const fi = (function() {
           out.push(i)
         }
       }
+      console.log(out)
       return out;
     },
     functions: function() {
