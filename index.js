@@ -128,6 +128,7 @@ const fi = (function() {
     },
     flatten: function(array, shallow)
     {
+      console.log("IN")
         let out = []
         console.log(array)
         for(let i=0; i<array.length; i++)
