@@ -23,7 +23,22 @@ const fi = (function() {
       return collection
     },
 
-    map: function() {
+    map: function(collection, callback) {
+      if (typeof collection == "object")
+      {
+        for(const [key, value] of Object.entries(collection))
+        {
+          callback(value, key, collection)
+        }
+      }
+      else
+      {
+        for(let i = 0; i<collection.length; i++)
+        {
+          callback(collection[i], i, collection)
+        }
+      }
+      return collection
 
     },
 
