@@ -129,6 +129,7 @@ const fi = (function() {
     flatten: function(array, [shallow])
     {
         let out = []
+        console.log(array)
         for(let i=0; i<array.length; i++)
         {
             if(Array.isArray(array[i]))
@@ -139,7 +140,7 @@ const fi = (function() {
             else
             {
               console.log(array[i])
-                out.push(array[i])
+              out.push(array[i])
             }
         }
         array = out;
