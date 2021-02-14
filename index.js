@@ -44,12 +44,11 @@ const fi = (function() {
     },
 
     reduce: function(collection, callback, acc = 0) {
-      let out = acc;
       for(let i = 0; i<collection.length; i++)
       {
-        out += (callback(acc, collection[i], collection))
+        acc += (callback(acc, collection[i], collection))
       }
-      return out
+      return acc
 
     },
 
