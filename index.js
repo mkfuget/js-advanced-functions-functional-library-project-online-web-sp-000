@@ -65,14 +65,15 @@ const fi = (function() {
     },
     filter: function(collection, predicate)
     {
+      out = [];
       for(let i = 0; i<collection.length; i++)
       {
         if(predicate(collection[i]))
         {
-          return collection[i]
+          out.push(collection[i])
         }
       }
-      return undefined
+      return out
 
     },
 
