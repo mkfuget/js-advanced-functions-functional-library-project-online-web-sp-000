@@ -141,7 +141,6 @@ const fi = (function() {
               for(let j=0; i<array[i].length; j++)
               {
                 out.push(array[i][j])
-
               }
             }
             else
