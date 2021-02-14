@@ -92,7 +92,7 @@ const fi = (function() {
       let out = [];
       for(let i=0; i<n; i++)
       {
-        out.push(collection[1])
+        out.push(collection[i])
       }
       return (out.length === 1 ? out[0]: out);
     },
