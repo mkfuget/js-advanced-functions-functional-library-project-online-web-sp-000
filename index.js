@@ -96,7 +96,7 @@ const fi = (function() {
       }
       return (out.length === 1 ? out[0]: out);
     },
-    first: function(collection, n=1)
+    last: function(collection, n=1)
     {
       let out = [];
       for(let i=0; i<n; i++)
