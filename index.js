@@ -80,7 +80,7 @@ const fi = (function() {
     {
       if (typeof collection == "object")
       {
-        return collection.keys.length
+        return Object.keys(collection).length
       }
       else
       {
