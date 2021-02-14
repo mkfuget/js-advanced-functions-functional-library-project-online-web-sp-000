@@ -8,7 +8,7 @@ const fi = (function() {
 
       if (typeof collection == "object")
       {
-        for(const [key, value] of collection)
+        for(const [key, value] of Object.entries(collection))
         {
           callback(value, key, collection)
         }
