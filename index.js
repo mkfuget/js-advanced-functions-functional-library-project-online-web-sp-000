@@ -5,6 +5,8 @@ const fi = (function() {
     },
 
     each: function(collection, callback) {
+      console.log(typeof collection)
+
       if (typeof collection === object)
       {
         console.log("TEST")
@@ -15,7 +17,6 @@ const fi = (function() {
         {
           callback(collection[i], i, collection)
         }
-
       }
       return collection
     },
