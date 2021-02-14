@@ -49,14 +49,14 @@ const fi = (function() {
       {
         for(const [key, value] of Object.entries(collection))
         {
-          out +=  callback(value, key, collection)+acc
+          out +=  callback(value, key, collection)
         }
       }
       else
       {
         for(let i = 0; i<collection.length; i++)
         {
-          out += (callback(collection[i], i, collection))+acc
+          out += (callback(collection[i], i, collection))
         }
       }
       return out
