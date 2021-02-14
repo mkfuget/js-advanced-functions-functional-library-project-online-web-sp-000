@@ -135,7 +135,7 @@ const fi = (function() {
         console.log(array)
         for(let i=0; i<array.length; i++)
         {
-            if( typeof array[i] === "array")
+            if( Array.isArray(array[i]))
             {
               console.log(array[i])
               console.log("IN SUBARRAY")
