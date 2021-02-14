@@ -128,7 +128,7 @@ const fi = (function() {
     },
     flatten: function(array, [shallow])
     {
-        out = []
+        let out = []
         for(let i=0; i<array.length; i++)
         {
             if(Array.isArray(array[i]))
