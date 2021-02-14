@@ -95,7 +95,7 @@ const fi = (function() {
         out.push(collection[1])
       }
       return out;
-    }
+    },
     functions: function() {
 
     },
