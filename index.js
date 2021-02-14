@@ -24,6 +24,7 @@ const fi = (function() {
     },
 
     map: function(collection, callback) {
+      out = [];
       if (typeof collection == "object")
       {
         for(const [key, value] of Object.entries(collection))
