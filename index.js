@@ -9,6 +9,7 @@ const fi = (function() {
       {
         callback(collection[i], i, collection)
       }
+      return collection
     },
 
     map: function() {
