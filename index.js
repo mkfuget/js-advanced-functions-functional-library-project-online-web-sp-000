@@ -128,7 +128,14 @@ const fi = (function() {
     },
     flatten: function(array, [shallow])
     {
-
+        out = []
+        for(let i=0; i<array.length; i++)
+        {
+            if(array[i].isArray)
+            {
+              out.concat(fi.flatten(array[i]))
+            }
+        }
     },
     functions: function() {
 
