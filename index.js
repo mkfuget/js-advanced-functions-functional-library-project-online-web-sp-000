@@ -120,7 +120,7 @@ const fi = (function() {
     sortBy: function(collection, callback)
     {
       return collection.sort(callback(a, b))
-    }
+    },
     functions: function() {
 
     },
