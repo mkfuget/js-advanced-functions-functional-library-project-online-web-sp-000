@@ -138,7 +138,7 @@ const fi = (function() {
             if( typeof array[i] === "array")
             {
               console.log(array[i])
-              for(let j=0; i<array[i].length; j++)
+              for(let j=0; j<array[i].length; j++)
               {
                 out.push(array[i][j])
               }
