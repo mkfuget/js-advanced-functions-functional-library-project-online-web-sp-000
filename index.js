@@ -119,7 +119,7 @@ const fi = (function() {
     },
     sortBy: function(collection, callback)
     {
-      return collection.sort(function(a, b){return callback(a, b)})
+      return collection.sort(function(a, b){return callback(b, a)})
     },
     functions: function() {
 
