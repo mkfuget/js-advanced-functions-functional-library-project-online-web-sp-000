@@ -128,9 +128,6 @@ const fi = (function() {
     },
     flatten: function(array, shallow)
     {
-      console.log("IN")
-      console.log("array")
-        console.log(array)
         let out = []
         let collapsed = false;
 
@@ -150,14 +147,11 @@ const fi = (function() {
               }
               else
               {
-                console.log(array[i])
                 out.push(array[i])
               }
           }
           array = out;
         } while(!shallow && collapsed)
-        console.log("OUT")
-        console.log(out)
         array = out;
         return array;
     },
