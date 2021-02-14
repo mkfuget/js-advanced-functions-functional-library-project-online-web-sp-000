@@ -176,7 +176,7 @@ const fi = (function() {
         }
       }
       return out;
-    }
+    },
     functions: function() {
 
     },
