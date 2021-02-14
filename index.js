@@ -161,12 +161,14 @@ const fi = (function() {
       {
         array.sort();
       }
-      let out = [array[0]];
-      for(let i = 1; i<array.length; i++)
+      let out = [];
+      let set = new Set();
+      for(let i = 0; i<array.length; i++)
       {
-        if(callback(array[i]) != callback(array[i-1]))
+        if(!set.has(callback(array[i])))
         {
           out.push(array[i])
+          set.add(callback(array[i]))
         }
       }
       console.log(out)
