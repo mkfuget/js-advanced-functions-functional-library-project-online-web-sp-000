@@ -138,6 +138,7 @@ const fi = (function() {
             }
             else
             {
+              console.log(array[i])
                 out.push(array[i])
             }
         }
