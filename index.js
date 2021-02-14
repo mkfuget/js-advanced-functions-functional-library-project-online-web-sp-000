@@ -108,11 +108,11 @@ const fi = (function() {
     compact: function(collection)
     {
       let out = [];
-      for(let i=0; i<n; i++)
+      for(let i=0; i<collection.length; i++)
       {
         if(collection[i])
         {
-          out.push(collection[collection.length - n + i])
+          out.push(collection[i])
         }
       }
       return out;
