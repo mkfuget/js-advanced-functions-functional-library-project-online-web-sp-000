@@ -152,7 +152,7 @@ const fi = (function() {
               }
           }
           array = out;
-        } (!shallow && collapsed)
+        } while(!shallow && collapsed)
         console.log("OUT")
         console.log(out)
         array = out;
