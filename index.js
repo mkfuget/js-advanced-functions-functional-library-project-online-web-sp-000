@@ -138,7 +138,7 @@ const fi = (function() {
             if( typeof array[i] === "array")
             {
               console.log(array[i])
-              out.push(flatten(array[i]))
+              out.push(fi.flatten(array[i]))
             }
             else
             {
