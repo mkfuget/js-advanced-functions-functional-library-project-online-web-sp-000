@@ -29,14 +29,14 @@ const fi = (function() {
       {
         for(const [key, value] of Object.entries(collection))
         {
-          callback(value, key, collection)
+          out.push(callback(value, key, collection))
         }
       }
       else
       {
         for(let i = 0; i<collection.length; i++)
         {
-          callback(collection[i], i, collection)
+          out.push(callback(collection[i], i, collection))
         }
       }
       return collection
