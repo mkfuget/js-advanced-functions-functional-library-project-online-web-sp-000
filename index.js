@@ -65,7 +65,7 @@ const fi = (function() {
     },
     filter: function(collection, predicate)
     {
-      out = [];
+      let out = [];
       for(let i = 0; i<collection.length; i++)
       {
         if(predicate(collection[i]))
