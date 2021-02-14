@@ -87,6 +87,15 @@ const fi = (function() {
         return collection.length
       }
     },
+    first: function(collection, n=1)
+    let out = [];
+    {
+      for(let i=0; i<n; i++)
+      {
+        out.push(collection[1])
+      }
+      return out;
+    }
     functions: function() {
 
     },
