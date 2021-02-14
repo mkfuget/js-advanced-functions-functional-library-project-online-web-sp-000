@@ -134,14 +134,12 @@ const fi = (function() {
         do
         {
           let out = []
-
+          collapsed = false;
           for(let i=0; i<array.length; i++)
           {
               if(Array.isArray(array[i]))
               {
-                console.log(array[i])
-                console.log("IN SUBARRAY")
-
+                collapsed = true;
                 for(let j=0; j<array[i].length; j++)
                 {
                   out.push(array[i][j])
@@ -153,6 +151,7 @@ const fi = (function() {
                 out.push(array[i])
               }
           }
+          array = out;
         } (!shallow && collapsed)
         console.log("OUT")
         console.log(out)
