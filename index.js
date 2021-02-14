@@ -133,7 +133,7 @@ const fi = (function() {
         {
             if(array[i].isArray)
             {
-              out.concat(fi.flatten(array[i]))
+              out = [...out, fi.flatter(array[i])]
             }
             else
             {
