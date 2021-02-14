@@ -143,6 +143,7 @@ const fi = (function() {
               out.push(array[i])
             }
         }
+        console.log("OUT")
         console.log(out)
         array = out;
         return array;
