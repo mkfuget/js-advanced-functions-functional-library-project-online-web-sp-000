@@ -132,7 +132,7 @@ const fi = (function() {
         console.log(array)
         for(let i=0; i<array.length; i++)
         {
-            if(Array.isArray(array[i]))
+            if(if typeof array[i] === "array")
             {
               console.log(array[i])
               out.push(fi.flatten(array[i]))
