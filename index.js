@@ -130,10 +130,10 @@ const fi = (function() {
     {
       console.log("IN")
       console.log("array")
-        let out = []
         console.log(array)
         do
         {
+          let out = []
 
           for(let i=0; i<array.length; i++)
           {
