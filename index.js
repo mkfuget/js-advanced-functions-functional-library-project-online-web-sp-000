@@ -165,7 +165,7 @@ const fi = (function() {
     {
       if(!isSorted)
       {
-        Array.sort(array)
+        array.sort();
       }
       out = [array[0]];
       for(let i = 1; i<array.length; i++)
