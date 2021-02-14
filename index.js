@@ -94,7 +94,7 @@ const fi = (function() {
       {
         out.push(collection[1])
       }
-      return out;
+      return (out.length === 1 ? out[0]: out;
     },
     functions: function() {
 
