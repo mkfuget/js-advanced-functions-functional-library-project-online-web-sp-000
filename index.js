@@ -172,7 +172,7 @@ const fi = (function() {
       {
         if(callback(array[i])!= callback(array[i-1]))
         {
-          put.push(i)
+          out.push(i)
         }
       }
       return out;
