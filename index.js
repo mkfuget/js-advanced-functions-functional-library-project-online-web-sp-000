@@ -46,7 +46,7 @@ const fi = (function() {
     reduce: function(collection, callback, acc = 0) {
       for(let i = 0; i<collection.length; i++)
       {
-        acc += (callback(acc, collection[i], collection))
+        acc = (callback(acc, collection[i], collection))
       }
       return acc
 
