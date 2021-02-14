@@ -117,7 +117,10 @@ const fi = (function() {
       }
       return out;
     },
+    sortBy: function(collection, callback)
+    {
 
+    }
     functions: function() {
 
     },
