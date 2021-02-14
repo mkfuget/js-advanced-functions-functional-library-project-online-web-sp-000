@@ -135,7 +135,7 @@ const fi = (function() {
             if(Array.isArray(array[i]))
             {
               console.log(array[i])
-              out = [...out, ...fi.flatten(array[i])]
+              out.push(fi.flatten(array[i]))
             }
             else
             {
