@@ -43,7 +43,7 @@ const fi = (function() {
 
     },
 
-    reduce: function(collection, callback, acc) {
+    reduce: function(collection, callback, acc = 0) {
       let out = acc;
       if (typeof collection == "object")
       {
