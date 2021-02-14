@@ -6,7 +6,7 @@ const fi = (function() {
 
     each: function(collection, callback) {
       let i = 0;
-      for(const element of collection)
+      for(const [key, value] of collection)
       {
         callback(element, i, collection)
         i++;
