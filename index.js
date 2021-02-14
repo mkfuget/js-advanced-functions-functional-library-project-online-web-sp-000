@@ -161,6 +161,22 @@ const fi = (function() {
         array = out;
         return array;
     },
+    uniq: function(array, isSorted = false, callback = (x => x))
+    {
+      if(!isSorted)
+      {
+        Array.sort(array)
+      }
+      out = [array[0]];
+      for(let i = 1; i<array.length; i++)
+      {
+        if(callback(array[i])!= callback(array[i-1]))
+        {
+          put.push(i)
+        }
+      }
+      return out;
+    }
     functions: function() {
 
     },
