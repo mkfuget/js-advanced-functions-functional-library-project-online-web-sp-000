@@ -130,7 +130,7 @@ const fi = (function() {
     {
       console.log("IN")
       console.log("array")
-
+        let count = 0;
         let out = []
         console.log(array)
         for(let i=0; i<array.length; i++)
@@ -138,7 +138,11 @@ const fi = (function() {
             if( typeof array[i] === "array")
             {
               console.log(array[i])
-              out.push(fi.flatten(array[i]))
+              for(let j=0; i<array[i].length; j++)
+              {
+                out.push(array[i][j])
+
+              }
             }
             else
             {
