@@ -9,9 +9,13 @@ const fi = (function() {
       {
         console.log("TEST")
       }
-      for(let i = 0; i<collection.length; i++)
+      else 
       {
-        callback(collection[i], i, collection)
+        for(let i = 0; i<collection.length; i++)
+        {
+          callback(collection[i], i, collection)
+        }
+
       }
       return collection
     },
