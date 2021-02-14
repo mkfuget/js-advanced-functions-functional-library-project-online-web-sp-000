@@ -164,7 +164,7 @@ const fi = (function() {
       let out = [array[0]];
       for(let i = 1; i<array.length; i++)
       {
-        if(callback(array[i])!= callback(array[i-1]))
+        if(callback(array[i]) != callback(array[i-1]))
         {
           out.push(array[i])
         }
