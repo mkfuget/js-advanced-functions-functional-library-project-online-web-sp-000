@@ -128,7 +128,7 @@ const fi = (function() {
     },
     flatten: function(array, [shallow])
     {
-      
+
     },
     functions: function() {
 
