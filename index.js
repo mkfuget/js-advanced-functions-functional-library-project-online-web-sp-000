@@ -63,6 +63,19 @@ const fi = (function() {
       return undefined
 
     },
+    filter: function(collection, predicate)
+    {
+      for(let i = 0; i<collection.length; i++)
+      {
+        if(predicate(collection[i]))
+        {
+          return collection[i]
+        }
+      }
+      return undefined
+
+    },
+
     functions: function() {
 
     },
