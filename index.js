@@ -5,11 +5,14 @@ const fi = (function() {
     },
 
     each: function(collection, callback) {
-      console.log(typeof collection)
 
       if (typeof collection == "object")
       {
-        console.log("TEST")
+        for(let i = 0; i<collection.length; i++)
+        {
+          callback(collection[i], i, collection)
+        }
+
       }
       else
       {
