@@ -164,12 +164,11 @@ const fi = (function() {
       let out = [array[0]];
       for(let i = 1; i<array.length; i++)
       {
-        if(array[i]!= array[i-1])
+        if(callback(array[i])!= callback(array[i-1]))
         {
-          out.push(i)
+          out.push(array[i])
         }
       }
-      console.log(out)
       return out;
     },
     functions: function() {
