@@ -174,6 +174,9 @@ const fi = (function() {
       console.log(out)
       return out;
     },
+    keys: function(collection){
+      
+    }
     functions: function() {
 
     },
