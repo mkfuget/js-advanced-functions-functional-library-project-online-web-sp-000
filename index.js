@@ -181,9 +181,19 @@ const fi = (function() {
       return Object.values(object)
     },
 
-    functions: function() {
+    functions: function(object) {
+      out = []
+      keys = Object.keys(object)
+      for(let i=0; i<keys.length; i++)
+      {
+        if(typeof object[key[i]] == function)
+        {
+          out.push(keys[i])
+        }
+      }
+      
       console.log(Object.keys(fi).sort())
-      return Object.keys(fi).sort()
+      return out.sort()
     },
 
 
