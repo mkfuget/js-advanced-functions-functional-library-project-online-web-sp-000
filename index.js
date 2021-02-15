@@ -191,8 +191,6 @@ const fi = (function() {
           out.push(keys[i])
         }
       }
-
-      console.log(Object.keys(fi).sort())
       return out.sort()
     },
 
