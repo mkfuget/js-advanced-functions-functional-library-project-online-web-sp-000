@@ -186,6 +186,7 @@ const fi = (function() {
       let keys = Object.keys(object)
       for(let i=0; i<keys.length; i++)
       {
+        console.log(typeof object[key[i]])
         if(typeof object[key[i]] === "function")
         {
           out.push(keys[i])
