@@ -174,8 +174,8 @@ const fi = (function() {
       console.log(out)
       return out;
     },
-    keys: function(collection){
-
+    keys: function(object){
+      return Object.keys(object)
     }
     functions: function() {
 
