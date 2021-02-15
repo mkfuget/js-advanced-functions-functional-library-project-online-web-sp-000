@@ -182,7 +182,7 @@ const fi = (function() {
     },
 
     functions: function() {
-
+      return fi.keys(fi).sort
     },
 
 
