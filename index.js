@@ -183,7 +183,7 @@ const fi = (function() {
 
     functions: function() {
       console.log(Object.keys(fi))
-      return fi.sort(Object.keys(fi), (x => x))
+      return (Object.keys(fi)).sort
     },
 
 
