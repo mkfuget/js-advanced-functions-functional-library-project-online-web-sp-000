@@ -183,7 +183,7 @@ const fi = (function() {
 
     functions: function(object) {
       let out = []
-      keys = Object.keys(object)
+      let keys = Object.keys(object)
       for(let i=0; i<keys.length; i++)
       {
         if(typeof object[key[i]] === "function")
