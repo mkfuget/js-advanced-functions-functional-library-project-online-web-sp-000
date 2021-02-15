@@ -177,6 +177,10 @@ const fi = (function() {
     keys: function(object){
       return Object.keys(object)
     },
+    values: function(object){
+      return Object.values(object)
+    },
+
     functions: function() {
 
     },
